@@ -52,8 +52,8 @@ Proj_Bluetooth.bin \
 all: Proj_Bluetooth.elf secondary-outputs
 
 # Tool invocations
-Proj_Bluetooth.elf: $(OBJS) $(USER_OBJS) C:\Users\akash\STM32CubeIDE\workspace_1.3.0\Proj_Bluetooth\STM32F401RETX_FLASH.ld
-	arm-none-eabi-gcc -o "Proj_Bluetooth.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\akash\STM32CubeIDE\workspace_1.3.0\Proj_Bluetooth\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Proj_Bluetooth.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Proj_Bluetooth.elf: $(OBJS) $(USER_OBJS) D:\ST_Embedded_Project\gitClones\Proj_Bluetooth\Proj_Bluetooth\STM32F401RETX_FLASH.ld
+	arm-none-eabi-gcc -o "Proj_Bluetooth.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\ST_Embedded_Project\gitClones\Proj_Bluetooth\Proj_Bluetooth\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Proj_Bluetooth.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

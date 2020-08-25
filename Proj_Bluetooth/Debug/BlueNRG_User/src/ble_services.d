@@ -1,4 +1,4 @@
-BlueNRG_User/src/ble_app.o: ../BlueNRG_User/src/ble_app.c \
+BlueNRG_User/src/ble_services.o: ../BlueNRG_User/src/ble_services.c \
  ../BlueNRG_User/inc/ble_app.h ../BlueNRG-MS/Target/bluenrg_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
@@ -46,7 +46,8 @@ BlueNRG_User/src/ble_app.o: ../BlueNRG_User/src/ble_app.c \
  ../Middlewares/ST/BlueNRG-MS/includes/bluenrg_gap_aci.h \
  ../Middlewares/ST/BlueNRG-MS/includes/bluenrg_gatt_aci.h \
  ../Middlewares/ST/BlueNRG-MS/includes/bluenrg_gatt_server.h \
- ../BlueNRG_User/inc/ble_services.h
+ ../Middlewares/ST/BlueNRG-MS/includes/bluenrg_aci_const.h \
+ ../Middlewares/ST/BlueNRG-MS/includes/hci_const.h ../Core/Inc/main.h
 
 ../BlueNRG_User/inc/ble_app.h:
 
@@ -146,4 +147,8 @@ BlueNRG_User/src/ble_app.o: ../BlueNRG_User/src/ble_app.c \
 
 ../Middlewares/ST/BlueNRG-MS/includes/bluenrg_gatt_server.h:
 
-../BlueNRG_User/inc/ble_services.h:
+../Middlewares/ST/BlueNRG-MS/includes/bluenrg_aci_const.h:
+
+../Middlewares/ST/BlueNRG-MS/includes/hci_const.h:
+
+../Core/Inc/main.h:

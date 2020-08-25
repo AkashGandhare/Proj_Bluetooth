@@ -1,2 +1,2 @@
-ble_app.c:36:6:MX_BlueNRG_MS_Init	56	static
-ble_app.c:62:6:MX_BlueNRG_MS_Process	56	static
+ble_app.c:42:6:MX_BlueNRG_MS_Init	56	static
+ble_app.c:71:6:MX_BlueNRG_MS_Process	56	static

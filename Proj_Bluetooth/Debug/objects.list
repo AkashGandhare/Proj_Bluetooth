@@ -1,5 +1,6 @@
 "BlueNRG-MS/Target/hci_tl_interface.o"
 "BlueNRG_User/src/ble_app.o"
+"BlueNRG_User/src/ble_services.o"
 "Core/Src/gpio.o"
 "Core/Src/main.o"
 "Core/Src/stm32f4xx_hal_msp.o"

@@ -18,8 +18,13 @@
 #include "bluenrg_gap.h"
 #include "bluenrg_gap_aci.h"
 #include "bluenrg_gatt_aci.h"
+#include "ble_services.h"
 
 #include <stdint.h>
+
+/*
+ * user variables
+ */
 
 /*
  * user defines
@@ -29,6 +34,7 @@
 /*
  * functions prototypes
  */
+
 
 /*
  * Initialization of BlueNRG module
@@ -40,7 +46,7 @@ void MX_BlueNRG_MS_Init() {
 
 	uint16_t service_handle, dev_name_char_handle, appearance_char_handle;
 
-	hci_init(NULL, NULL);
+	hci_init(user_notify, NULL);
 	hci_reset();
 	HAL_Delay(100);
 
@@ -54,6 +60,9 @@ void MX_BlueNRG_MS_Init() {
 
 	aci_gatt_update_char_value(service_handle, dev_name_char_handle, 0, strlen(name), (uint8_t*)name);
 
+	//add services
+	addServices();
+
 }
 
 /*
@@ -61,11 +70,12 @@ void MX_BlueNRG_MS_Init() {
  */
 void MX_BlueNRG_MS_Process() {
 	tBleStatus ret;
-	const char local_name[] = {AD_TYPE_COMPLETE_LOCAL_NAME,'B','L','E','-','A','L','G'};
+	const char local_name[] = {AD_TYPE_COMPLETE_LOCAL_NAME,'B','L','E','-','A','X','G'};
 
 	hci_le_set_scan_resp_data(0, NULL);
 
 	ret = aci_gap_set_discoverable(ADV_IND, 0, 0, PUBLIC_ADDR,NO_WHITE_LIST_USE, sizeof(local_name), local_name, 0, NULL, 0, 0);
 
+	hci_user_evt_proc();
 }
 

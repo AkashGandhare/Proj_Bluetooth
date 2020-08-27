@@ -47,7 +47,8 @@ BlueNRG_User/src/ble_services.o: ../BlueNRG_User/src/ble_services.c \
  ../Middlewares/ST/BlueNRG-MS/includes/bluenrg_gatt_aci.h \
  ../Middlewares/ST/BlueNRG-MS/includes/bluenrg_gatt_server.h \
  ../Middlewares/ST/BlueNRG-MS/includes/bluenrg_aci_const.h \
- ../Middlewares/ST/BlueNRG-MS/includes/hci_const.h ../Core/Inc/main.h
+ ../Middlewares/ST/BlueNRG-MS/includes/hci_const.h ../Core/Inc/main.h \
+ ../Core/Inc/usart.h ../Core/Inc/main.h
 
 ../BlueNRG_User/inc/ble_app.h:
 
@@ -150,5 +151,9 @@ BlueNRG_User/src/ble_services.o: ../BlueNRG_User/src/ble_services.c \
 ../Middlewares/ST/BlueNRG-MS/includes/bluenrg_aci_const.h:
 
 ../Middlewares/ST/BlueNRG-MS/includes/hci_const.h:
+
+../Core/Inc/main.h:
+
+../Core/Inc/usart.h:
 
 ../Core/Inc/main.h:

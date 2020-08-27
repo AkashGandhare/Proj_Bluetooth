@@ -19,4 +19,7 @@
 tBleStatus updateData(int16_t newData);
 tBleStatus addServices(void);
 void user_notify(void *pdata);
+void sendData(uint8_t *dataBuffer, uint8_t dataLen);
+void receiveData(uint8_t *dataBuffer, uint8_t dataLen);
+
 #endif /* INC_BLE_SERVICES_H_ */

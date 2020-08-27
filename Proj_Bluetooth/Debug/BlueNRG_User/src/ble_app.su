@@ -1,2 +1,4 @@
-ble_app.c:42:6:MX_BlueNRG_MS_Init	56	static
-ble_app.c:71:6:MX_BlueNRG_MS_Process	56	static
+ble_app.c:46:6:MX_BlueNRG_MS_Init	56	static
+ble_app.c:75:6:MX_BlueNRG_MS_Process	8	static
+ble_app.c:82:13:userChat	16	static
+ble_app.c:99:13:make_connection	48	static

@@ -1,6 +1,6 @@
 Configuration	Proj_Bluetooth
 STM32CubeMX 	6.0.1
-Date	08/22/2020
+Date	08/25/2020
 MCU	STM32F401RETx
 
 
@@ -22,6 +22,7 @@ USART1	Asynchronous	USART1_TX	PB6
 
 
 Pin Nb	PINs	FUNCTIONs	LABELs
+2	PC13-ANTI_TAMP	GPIO_EXTI13	PUSH_BUTTON
 3	PC14-OSC32_IN	RCC_OSC32_IN	
 4	PC15-OSC32_OUT	RCC_OSC32_OUT	
 5	PH0 - OSC_IN	RCC_OSC_IN	
@@ -56,6 +57,7 @@ USART1	Asynchronous	USART1_TX	PB6
 
 
 Pin Nb	PINs	FUNCTIONs	LABELs
+2	PC13-ANTI_TAMP	GPIO_EXTI13	PUSH_BUTTON
 3	PC14-OSC32_IN	RCC_OSC32_IN	
 4	PC15-OSC32_OUT	RCC_OSC32_OUT	
 5	PH0 - OSC_IN	RCC_OSC_IN	
@@ -80,7 +82,7 @@ SOFTWARE PROJECT
 
 Project Settings : 
 Project Name : Proj_Bluetooth
-Project Folder : C:\Users\akash\STM32CubeIDE\workspace_1.3.0\Proj_Bluetooth
+Project Folder : D:\ST_Embedded_Project\gitClones\Proj_Bluetooth\Proj_Bluetooth
 Toolchain / IDE : STM32CubeIDE
 Firmware Package Name and Version : STM32Cube FW_F4 V1.25.0
 

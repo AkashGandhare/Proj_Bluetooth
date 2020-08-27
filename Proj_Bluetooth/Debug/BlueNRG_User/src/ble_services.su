@@ -1,7 +1,7 @@
-ble_services.c:47:12:addServices	56	static
-ble_services.c:72:12:updateData	32	static
-ble_services.c:87:12:updateTempData	32	static
-ble_services.c:98:6:GAP_ConnectionComplete_CB	16	static
-ble_services.c:111:6:GAP_DisconnectionComplete_CB	8	static
-ble_services.c:122:6:Read_Request_CB	40	static
-ble_services.c:150:6:user_notify	40	static
+ble_services.c:51:12:addServices	40	static
+ble_services.c:65:6:receiveData	48	static
+ble_services.c:79:6:sendData	24	static
+ble_services.c:87:6:attribute_Modified_CB	16	static
+ble_services.c:100:6:GAP_ConnectionComplete_CB	24	static
+ble_services.c:117:6:GAP_DisconnectionComplete_CB	8	static
+ble_services.c:162:6:user_notify	40	static

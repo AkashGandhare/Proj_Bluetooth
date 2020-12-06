@@ -1,5 +1,5 @@
 ble_services.c:51:12:addServices	40	static
-ble_services.c:65:6:receiveData	48	static
+ble_services.c:65:6:receiveData	16	static
 ble_services.c:79:6:sendData	24	static
 ble_services.c:87:6:attribute_Modified_CB	16	static
 ble_services.c:100:6:GAP_ConnectionComplete_CB	24	static

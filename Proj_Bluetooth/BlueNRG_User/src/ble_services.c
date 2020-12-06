@@ -63,13 +63,13 @@ tBleStatus addServices(void) {
  * @brief receive data
  */
 void receiveData(uint8_t *dataBuffer, uint8_t dataLen) {
-	uint8_t recData[30];
-	memset(recData,0,sizeof(recData));
+//	uint8_t recData[30];
+//	memset(recData,0,sizeof(recData));
 
-	HAL_GPIO_TogglePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin);
+	HAL_GPIO_TogglePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin); // toggle LED on receiption on any data
 
-	memcpy(recData,dataBuffer,dataLen);
-	HAL_UART_Transmit(&huart1, recData, dataLen, 100);
+//	memcpy(recData,dataBuffer,dataLen);
+//	HAL_UART_Transmit(&huart1, recData, dataLen, 100);
 
 }
 
@@ -116,7 +116,7 @@ void GAP_ConnectionComplete_CB(uint8_t addr[6], uint16_t handle) {
  */
 void GAP_DisconnectionComplete_CB(void) {
 
-//#Todo: connection complete
+//#Todo: Disconnection complete
 	connected= FALSE;
 	printf("Disconnected the device:\r\n");
 	set_connectable = TRUE;
